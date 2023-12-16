@@ -1,0 +1,258 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #98002e;
+	margin: 10px 0 0 0;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Roboto';
+}
+
+h1 {
+	color: #ffff99;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2 {
+	color: white;
+}
+
+header h2 {
+	color: grey;
+	text-align: center;
+	font-style: italic;
+}
+
+h3 {
+	color: gold;
+}
+
+h4 {
+	color: rgb(1, 250, 229);
+}
+
+h5 {
+	color: white;
+}
+
+.site-footer {
+	background-color: #98002e;
+	padding: 20px 0;
+}
+
+.jumbotron {
+	padding: 30px;
+	background-color: #98002e;
+	color: #999999;
+	margin: 0;
+}
+
+.row-content {
+	padding: 50px 0;
+	border-bottom: 1px ridge;
+	min-height: 200px;
+}
+
+.navbar {
+	background-color: #000080;
+}
+
+a,
+a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+.carousel {
+	border: linear-gradient(#98002e, #999999);
+}
+
+#carouselButton {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+}
+
+p {
+	color: white;
+}
+
+.content {
+	padding: 4rem 0;
+}
+
+.form-control:active,
+.form-control:focus {
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+thead {
+	background-color: #98002e;
+	color: gold;
+}
+
+tbody {
+	background-color: #999999;
+	color: gold;
+}
+
+.main-image {
+	height: auto;
+	width: 400px;
+	cursor: pointer;
+}
+
+.main-image img {
+	max-width: 100%;
+}
+
+.image-modal {
+	display: none;
+}
+
+.image-modal-open {
+	overflow: hidden;
+}
+
+.image-in-modal {
+	cursor: pointer;
+}
+
+.image-modal.active-image-modal {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.image-modal-inner {
+	background: rgba(0, 0, 0, 0.8);
+	height: 500px;
+	width: 600px;
+	padding: 10px;
+}
+
+.image-modal-inner-content {
+	height: 100%;
+	max-height: 800px;
+}
+
+.image-modal-close {
+	padding: 0 15px 0 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+.image-modal-close img {
+	width: 20px;
+}
+
+li {
+	color: #fdeef4;
+}
+
+.breadcrumb-item {
+	color: black;
+}
+
+.breadcrumb {
+	background-color: #fdeef4;
+}
+
+.card {
+	background-color: #cd7f32;
+}
+
+.google-maps-container {
+	overflow: hidden;
+	max-width: 100%;
+	width: 600px; /* or any width you prefer */
+	height: 200px; /* or any height you prefer */
+}
+
+.google-maps-frame {
+	height: 100%;
+	width: 100%;
+	border: none;
+}
+
+#google-maps-display img {
+	max-height: none;
+	max-width: none !important;
+	background: none !important;
+}
+
+.carousel-image {
+	max-width: 100%; /* Limit the image width to the parent container */
+	max-height: 100%; /* Limit the image height to the parent container */
+	width: 400px; /* Maintain the aspect ratio */
+	height: auto; /* Maintain the aspect ratio */
+	object-fit: contain; /* Ensures that the entire image is visible, even if it has to be letterboxed */
+	display: block; /* Change display to block */
+	margin: auto; /* Auto margins for horizontal and vertical centering */
+}
+
+/* Instagram Button */
+.btn-instagram {
+	background-color: #e4405f; /* Instagram color */
+	color: white; /* Icon color */
+}
+
+.btn-instagram:hover {
+	background-color: #c32d4b; /* Darker shade for hover */
+}
+
+/* Facebook Button */
+.btn-facebook {
+	background-color: #3b5998; /* Facebook color */
+	color: white;
+}
+
+.btn-facebook:hover {
+	background-color: #2d4373; /* Darker shade for hover */
+}
+
+/* Twitter Button */
+.btn-twitter {
+	background-color: #1da1f2; /* Twitter color */
+	color: white;
+}
+
+.btn-twitter:hover {
+	background-color: #1a8cd8; /* Darker shade for hover */
+}
+
+/* Google/Youtube Button */
+.btn-google {
+	background-color: #ff0000; /* YouTube color */
+	color: white;
+}
+
+.btn-google:hover {
+	background-color: #cc0000; /* Darker shade for hover */
+}
+
+/* General button styling */
+.btn-social-icon {
+	border-radius: 50%; /* Circular shape */
+	width: 40px; /* Width */
+	height: 40px; /* Height */
+	margin: 5px; /* Spacing between buttons */
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.fa {
+	line-height: 40px; /* Center the icon vertically */
+}

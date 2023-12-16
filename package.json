@@ -1,0 +1,44 @@
+{
+	"name": "mywebsite",
+	"version": "1.0.0",
+	"description": "Git and NPM",
+	"main": "index.html",
+	"scripts": {
+		"lite": "lite-server",
+		"scss": "node-sass -o css/ css/",
+		"start": "npm run watch:all",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+		"watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+		"copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+		"imagemin": "node imagemin.js",
+		"usemin": "npx usemin Resume.html -d dist --htmlmin -o dist/Resume.html && npx usemin Projects.html -d dist --htmlmin -o dist/Projects.html && npx usemin Blog.html -d dist --htmlmin -o dist/Blog.html && npx usemin ContactMe.html -d dist --htmlmin -o dist/ContactMe.html && npx usemin AboutMe.html -d dist --htmlmin -o dist/AboutMe.html && npx usemin index.html -d dist --htmlmin -o dist/index.html",
+		"clean": "rimraf dist",
+		"build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
+	},
+	"author": "Jon Brickert",
+	"license": "ISC",
+	"devDependencies": {
+		"copyfiles": "^2.2.0",
+		"imagemin": "^8.0.1",
+		"imagemin-jpegtran": "^7.0.0",
+		"imagemin-pngquant": "^9.0.2",
+		"lite-server": "^2.6.1",
+		"node-sass": "^6.0.1",
+		"onchange": "^7.0.0",
+		"parallelshell": "3.0.1",
+		"rimraf": "^3.0.2",
+		"sass": "^1.69.5",
+		"usemin-cli": "^0.6.0"
+	},
+	"repository": {
+		"type": "git"
+	},
+	"dependencies": {
+		"bootstrap": "^4.5.2",
+		"bootstrap-social": "^5.1.1",
+		"font-awesome": "^4.7.0",
+		"jquery": "^3.5.1",
+		"popper.js": "^1.16.1"
+	}
+}
